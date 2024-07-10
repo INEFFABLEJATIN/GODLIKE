@@ -26,4 +26,14 @@ int main()
     cout<<endl;
 }
 
+/* terminal result  
+#1
+#1
+#1
+#1      
+
+#2   like this 
+
+if remove the endl after i then #1#1#1#1 
+if remove i also then ####  like this in 4 consecutive line */
 
