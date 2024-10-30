@@ -1,0 +1,522 @@
+
+<!-- saved from url=(0051)file:///C:/Users/ineff/Desktop/vscodes/webpage.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<style>
+
+pre { background-color: #f5f5f500; 
+  border-radius: 5px;
+  padding: 10px;
+  margin: 10px 0;
+  width :auto ;
+ }
+
+table,tr,th {border: #f3efef 30px;
+  border-radius: 20%;
+  padding-inline-start: 10px;
+  grid-template-columns: 1fr;
+  grid-auto-rows: 1fr;
+  grid-column: 1;
+  border-spacing: 20px;}
+body {
+  background-color: #222; 
+  color: #eee;
+  font-family: sans-serif ;
+  font-size: 20px;
+  user-select: none;
+  table-layout: auto;
+}
+
+.java{
+  background-color: #766a6a;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  border-radius: 10px;
+  padding: 20px;
+  margin: 20px;
+  box-shadow: 0 0 10px #000;
+  width: auto ;
+  line-height: 30px;
+  font-size: 20px;
+
+}
+
+.container {
+  background-color: #333333;
+  border-radius: 10px;
+  padding: 20px;
+  margin: 20px;
+  box-shadow: 0 0 10px #000;
+  width: auto ;
+  line-height: 30px;
+}
+
+h1, h2 {
+  margin-top: 0;
+}
+
+code {
+  background-color: #222;
+  color: #b8adad;
+  padding: 2px 5px;
+  border-radius: 3px;
+  display: inline-block;
+}
+
+.code-block {
+  background-color: #222;
+  box-shadow: #000;
+  border-radius: 5px;
+  padding: 10px;
+  margin: 10px 0;
+  width :auto ; 
+}
+
+.code-block code {
+  display: block;
+  margin: 0;
+  padding: 0;
+  width : auto;
+  max-width: auto;
+}
+
+.footnote {
+  font-size: 0.8em;
+  color: #888;
+  margin-top: 10px;
+}
+
+.footnote sup {
+  vertical-align: super;
+  font-size: 0.6em;
+}
+</style>
+</head>
+<body>
+
+  
+<div class="container">
+  <div class="code-block">
+    <h2>iomanip</h2>
+    <p>The iomanip library in C++ is used to manipulate the format of input and output streams. It provides a set of manipulators that allow you to control the appearance of data when it is displayed or read. Here are some of the common uses of iomanip</p>
+  </div>
+ <br>
+
+  <h2>Setting Field Width</h2>
+
+  <p>The <code>setw</code> manipulator is used to set the minimum width of the next output field. This is useful for aligning data in columns and creating well-organized output.</p>
+
+  <div class="code-block">
+    <code>
+cout &lt;&lt; setw(8) &lt;&lt; num1 &lt;&lt; setw(8) &lt;&lt; num2 &lt;&lt; setw(8) &lt;&lt; num3 &lt;&lt; endl;
+    </code>
+  </div>
+<br>
+  <h2>Setting Precision</h2>
+
+  <p>The <code>setprecision</code> manipulator is used to set the precision or the number of decimal places to be displayed when outputting a floating-point number.</p>
+
+  <div>
+ <code> cout &lt;&lt; setprecision (3) &lt;&lt; pi &lt;&lt; endl; // Output: 3.14</code> </pre>
+  </div><br>
+
+  <h2>Setting Fill Character</h2>
+
+  <p>The <code>setfill</code> manipulator is used to change the fill character used to pad the output to the specified width <!--<sup>2</sup><sup>3</sup> -->.</p>
+  
+  <div>
+  <code> cout &lt;&lt; setfill('0') &lt;&lt; setw(6) &lt;&lt; num &lt;&lt; endl; // Output: 000042</code> </pre>
+  </div><br>
+   <h2>Setting Base</h2>
+   <p>The <code>setbase</code> manipulator is used to set the base for integer output, allowing you to display numbers in decimal, hexadecimal, or octal format.</p>
+  <div class="code-block">
+    <code>
+cout &lt;&lt; setbase(16) &lt;&lt; num  &lt;&lt;  endl; // Output: A7F
+</code>
+  </div><br>
+<h2> Formatting monetary values</h2>
+<p>the<code>'get money'</code>and<code>'put money'</code> manipulators are used to parse and format monetary values resspectively </p>
+<br>
+<h2>Formatting date and time</h2>
+<p>the<code>'get time'</code>and<code>'put time'</code> manipulators are used to parse and format date and time according to a specified format.
+<br>  By using the manipulators provided by the <code>'iomanip'</code> library, you can create more readable and visually appealing output in your C++ programs.
+  
+</p>
+<br>
+<h1>Cpp File Extensions :- </h1>
+
+<p>
+  <div><code>.pdb</code>: This file extension stands for "Program Database" and is used by Microsoft Visual Studio to store debugging information for a program. The .pdb file contains information about the program's symbols (e.g., function names, variable names, line numbers), which can be used to debug the program more effectively. When you compile a program in Visual Studio with debugging information enabled, a .pdb file is generated alongside the executable file (.exe).</div>
+
+<br><div><code>.obj</code>: This file extension stands for "Object File" and is used to store compiled code that has not yet been linked with other object files or libraries. When you compile a program, the compiler generates one or more .obj files, which contain the machine code for the individual functions and variables in the program. These .obj files are then linked together by the linker to create the final executable file (.exe).</div>                                                                            
+<br><div><code>.ilk</code>: This file extension stands for "Incremental Linking File" and is used by Microsoft Visual Studio to store information about the linking process. The .ilk file contains information about the dependencies between the various object files and libraries that are linked together to create the final executable file (.exe). This information is used to speed up the linking process by only re-linking the parts of the program that have changed since the last build.</div>           
+<br> <div><code>.exe</code>: This file extension stands for "Executable File" and is used to denote a file that can be executed directly by the operating system. The .exe file contains the machine code for the program, as well as any necessary resources (e.g., images, sounds, data files) that are required for the program to run. When you double-click on a .exe file, the operating system loads the file into memory and begins executing the program.</div>     
+</p>
+
+<div>
+  <h2>pointers uses : </h2>
+  A pointer is a variable that stores the memory address of another variable. Pointers are useful for several reasons:
+
+  <br>1. Memory Efficiency: Pointers allow us to pass large data structures to functions without making a copy of the data. This can save memory and improve performance.
+  <br>2. Dynamic Memory Allocation: Pointers enable us to allocate memory dynamically during runtime, which is useful when the amount of memory needed is not known in advance.
+  <br>3. Code Organization: Pointers can help make code more organized and modular by allowing functions to modify their arguments directly, rather than requiring the function to return a modified copy of the data.
+  <br>4. Complex Data Structures: Pointers are essential for implementing complex data structures like linked lists, trees, and graphs, which are used in many real-world applications.
+  
+  Overall, pointers provide flexibility, efficiency, and power to the programmer, but they also require careful handling to avoid errors like null pointer dereferencing or memory leaks.</div>
+ <br>
+   
+ <div>
+  <h3> type casting </h3>
+<p>conversion of data from one type to another.  &nbsp; &NonBreakingSpace;
+ <t>Implicit conversion</t> : (automatic / type promotion) Done by computer to avoid data loss.<br> <t>there simple hirechy followed :  bool -> char -> int -> float -> double </t> 
+ <br><t>how char : in cpp all character are stored as number  A + 1  ;  A=65  B = 66 C = 67  a = 97 b =98 c =99 in cpp </t>
+ <div class = "code-block" > <code>
+    int main () { <br>
+      cout &lt;&lt; (10/3);   // gives 3 bcoz complier will take this as int / int 
+     <br> cout &lt;&lt; (10/3.0);   // gives 3.3333 bcoz complier will take this as int / float or double  
+     <br> cout &lt;&lt; ('A' + 1); // 66
+     <br> cout &lt;&lt; ('A'- 0); // we can check the value of A 
+     <br>}
+  </code></div>
+
+  <br> Explicit function : forced by programmer (you decide what you want)
+  <div class = "code-block" > <code>
+    int main () { <br>
+      float  PI = 3.14 ; <br>
+      cout &lt;&lt; (int)(PI);   // gives 3
+    <br> cout &lt;&lt; (char)('A' + 1 );  // gives B     
+    <br> 
+    }</code>
+  </div>
+</p>
+<body>
+<h2>Assignment operators</h2>
+
+  
+    <table >
+      
+     
+        <table>
+          <tr>
+            <th>Operator Name</th>
+            <th>Syntax</th>
+          </tr>
+          <tr>
+            <td>Addition Assignment</td>
+            <td>a+=b</td>
+          </tr>
+          <tr>
+            <td>Substraction Assignment</td>
+            <td>a-=b</td>
+          </tr>
+          <tr>
+            <td>Multiply Assignment</td>
+            <td>a*=b</td>
+          </tr>
+          <tr>
+            <td>Division Assignment</td>
+            <td>a/=b</td>
+          </tr>
+          <tr>
+            <td>Remainder Assignment</td>
+            <td>a%=b</td>
+          </tr>
+          <tr>
+            <td>Bitwise AND Assignment</td>
+            <td>a&=b</td>
+          </tr>
+          <tr>
+            <td>Bitwise OR Assignment</td>
+            <td>a|=b</td>
+          </tr>
+          <tr>
+            <td>Bitwise XOR Assignment</td>
+            <td>a^=b</td>
+          </tr>
+          <tr>
+            <td>Bitwise Left Shift Assignment</td>
+            <td>a<<=b</td>
+          </tr>
+          <tr>
+            <td>Bitwise Right Shift Assignment</td>
+            <td>a>>=b</td>
+          </tr>
+        </table>
+</body> <br>
+<div>
+<code>cout << (bool)3 + 2 ; // ans 3 , boolean = 1&0 , for non zero always 1 <br> cout << (23.5 + 2 + 'A');// float or double + int + char  >> complier will convert all in double or float  == 90.5</code>
+<br> 
+</div>  <br>
+<div><h2>Operator precedence</h2>
+<p>when multiple operator used in a single statement , it is operator precedence which decides which operation is performed first and so on.(similar to the rule of bodmass )</p>
+<table>
+  <tr>
+    <td>( )[ ]</td>
+    <td>operator with parenthesis are performed first</td>
+  </tr>
+  <tr>
+    <td>++--</td>
+    <td>postfix Increment / decrement </td>
+  </tr>
+  <tr>
+    <td>++--</td>
+    <td>prefix increment/decrement</td>
+  </tr>
+</table></div><br>
+<div><h2>Abstract classes</h2>
+<p>Abstract classes in C++ are a fundamental concept in object-oriented programming. They are used to define a blueprint for derived classes to follow, providing a common interface for them to implement.
+  &nbsp; An abstract class in C++ is a class that is designed to be specifically used as a base class. It contains at least one pure virtual function, which is a function that must be implemented by any derived class. Abstract classes cannot be instantiated directly, but pointers and references to abstract class types can be created.
+
+
+
+</p>
+</div>
+<div><h2>ARRAY</h2><p>the problem I got while writing array is<br> <code style ="white-space-collapse: preserve-breaks;">
+  #include<iostream>
+   <br> using namespace std;
+   <br>  int main() {
+        int arr[10];
+        for ( int i = 0; i <= 9 ;i++)
+        {  cout << arr[i];
+        }
+      }
+      return 0;
+    <br>there is error in this code it is printing 16 digit and some time more than it.
+    </code><br>It is because array is not initialized and it is printing garbage value.
+</p><code style = "white-space-collapse:preserve-breaks;" >
+  #include<iostream>
+  using namespace std;
+    
+  int main() {
+        int arr[10];
+        
+        // Initialize array elements
+        for (int i = 0; i < 10; ++i) {
+            arr[i] = i; // Assign values from 0 to 9 to the array elements
+        }
+        
+        // Print array elements
+        for (int i = 0; i < 10; ++i) {
+            cout << arr[i] << endl;
+        }
+        
+        return 0;
+    }
+</code><br> </div>
+ <div class=" pre"><p style = "white-space-collapse: preserve;">The reason why Variable Length Arrays (VLAs) are not supported by all compilers is due to the C++ standard.
+  <code style="white-space-collapse: preserve-breaks;">   int n ;
+  cout &lt;< " Enter no. of students : " ;
+  cin &lt; n ;
+  int marks [n];
+  for (int i=0;  i<=n-1; i++){
+     cin >> marks [i];
+  }
+
+  for (int i=0; i<=n-1; i++){
+     if (marks[i] < 35 ) cout << i+1 << " ";
+  } 
+  
+   
+ return 0;
+
+</code>
+  In C99 (the 1999 version of the C standard), Variable Length Arrays (VLAs) were introduced as a feature. 
+  However, in C++98 (the 1998 version of the C++ standard),VLAs were not included.
+  
+  C++11 (the 2011 version of the C++ standard) and later versions do not support VLAs either. 
+  Instead, they introduced std::vector and other dynamic containers to achieve similar functionality.
+  
+  Some compilers, such as GCC, do support VLAs as an extension to the C++ standard. 
+  However, this is not portable, meaning that code using VLAs may not compile or work correctly on other compilers.
+  
+  In particular, the Microsoft Visual C++ compiler does not support VLAs.
+  This is because the Visual C++ compiler is based on the C++ standard, which does not include VLAs.
+  
+  To write portable C++ code, it's generally recommended to avoid using VLAs and instead use std::vector or other dynamic containers. 
+  This ensures that your code will work correctly on all compilers that conform to the C++ standard.
+  
+Variable Length Array (VLA): In C++, the size of an array must be a constant expression known at compile-time. However, in this code, the size of the mark array is determined by the user input n, which is not a constant expression. This is not standard C++ and may not be supported by all compilers. To fix this, you can use a std::vector instead of an array.
+  
+  replaced the VLA with a std::vector, which is a more portable and standard-compliant approach.</p></div>
+  </div><code style="white-space-collapse: preserve-breaks;">
+    #include &lt;iostream&gt;
+      #include &lt;vector&gt;
+      using namespace std;
+      
+      int main() {
+          int n;
+          
+          cout << "Enter no. of students: ";
+          cin >> n;
+          vector<int> mark(n); // Use a std::vector instead of an array
+          for (int i = 0; i < n; i++) { // Change the condition to i < n
+              cin >> mark[i];
+          }
+      
+          for (int i = 0; i < n; i++) { // Change the condition to i < n
+              if (mark[i] < 35) cout << "Student " << i + 1 << " has a mark less than 35." << endl;
+          }
+          
+          return 0;
+      }
+  </code><br><h2>conio.h</h2>
+<p><code>conio.h</code> is a C header file that provides functions for console input/output operations. It is commonly used in C programming for developing interactive console applications.</p>
+<title>conio.h Functions</title>
+<style>
+
+</style>
+<h1>Functions in <code>conio.h</code></h1>
+
+<p>Some of the key functions provided by <code>conio.h</code> include:</p>
+
+<ul>
+  <li><code>kbhit</code>: Determines if a keyboard key was pressed.</li>
+  <li><code>cgets</code>: Reads a string directly from the console.</li>
+  <li><code>cscanf</code>: Reads formatted values directly from the console.</li>
+  <li><code>putch</code>: Writes a character directly to the console.</li>
+  <li><code>cputs</code>: Writes a string directly to the console.</li>
+  <li><code>cprintf</code>: Formats values and writes them directly to the console.</li>
+  <li><code>clrscr</code>: Clears the screen.</li>
+  <li><code>getch</code>: Gets a character from the console without echoing it.</li>
+  <li><code>getche</code>: Gets a character from the console and echoes it.</li>
+  <li><code>gotoxy</code>: Moves the cursor to a specific position on the screen.</li>
+  <li><code>wherex</code>: Returns the current x-coordinate of the cursor.</li>
+  <li><code>wherey</code>: Returns the current y-coordinate of the cursor.</li>
+  <li><code>highvideo</code>: Brightens a character string and displays it on the screen.</li>
+  <li><code>movetext</code>: Moves text on the screen.</li>
+  <li><code>getpass</code>: Takes input from the user without displaying it on the screen.</li>
+</ul>
+
+
+  <h2>Nested loops</h2>
+  <p style = "white-space-collapse: preserve-breaks;" > In nested loops(loop inside loop) the outer loop is just like no. of rows or basically no. of line code will have and the outer loop is just like no. of columns or how many elements are printed in each row  </p>
+</div>
+<br>
+
+<div class = java >
+<h1>ARRAYS In Java</h1>
+<p>
+  this will print the memory address of the array
+       
+     <br> <code>  
+      import java.util.Arrays;
+      <br>public class javabasics {
+      <br>public static void main(String[] args) {
+      <br>int[] numbers = new int[30];
+      <br> System.out.println(numbers);}
+      }</code>
+<br> for printing the individual element of the array, you need to use a loop to iterate over the elements and print each one separately 
+
+    <code>int[] numbers = new int[30];
+    <br>  for (int i = 0; i < numbers.length; i++) {
+       <br>   System.out.print(numbers[i] + " "); <br>\\\a space character (" ") after numbers[i] is to separate the elements of the array with a space character when they are printed.
+      } /// result = 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0  0 0 0 0 0 0 0 0 </code>
+      <br>
+      <br>
+      <code>int[] numbers = new int[30];
+      <br>  for (int i = 0; i < numbers.length; i++) {
+          <br>  System.out.print(numbers[i] + " ");
+          <br> numbers[0] =10;
+          <br> numbers[2] =20;
+          <br> numbers[3] =30;
+          <br> numbers[4] =10;
+          <br> this will print [10 20 30 40 0 0 0 0 0 0 ....]
+
+
+        }</code>
+</p>
+
+<div>
+  <h3>next()</h3>
+  <p>It reads input from the user until it encounters a whitespace character (such as a space, tab, or newline)
+    <br>It returns the input as a string(it returns a string object containing the input characters, excluding the whitespace character that terminated the input.)
+    <br>It returns null if no input is available.
+  </p>
+</div>
+</div>
+
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <div class="footnote">
+    <sup>perplexity.ai </sup> 
+    <sup>saii utya hai content</sup> 
+    <sup>bus knowledge ke liye aur thoda khud sai ... </sup> $_$
+  </div>
+</div>
+
+
+</body></html>
+
+<!---
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+.code-container-wrapper {
+  position: relative;
+  width: 100%;
+  height: 400px; /* Set the height of the code writer */
+}
+.code-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.copy-btn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background-color: #222;
+  color: #ddd;
+  border: none;
+  border-radius: 5px;
+  padding: 5px 10px;
+  font-size: 14px;
+  cursor: pointer;
+}
+</style>
+</head>
+<body>
+
+<div class="code-container-wrapper">
+  <button class="copy-btn">Copy</button>
+  <iframe class="code-container" src="code-writer.html"></iframe>
+</div>
+
+<script>
+// Get the copy button and the code container
+const copyBtn = document.querySelector('.copy-btn');
+const codeContainer = document.querySelector('.code-container');
+
+// Listen for a click event on the copy button
+copyBtn.addEventListener('click', () => {
+  // Create a new textarea element, set its value to the code, and append it to the body
+  const textarea = document.createElement('textarea');
+  textarea.value = codeContainer.contentWindow.document.querySelector('pre').textContent;
+  document.body.appendChild(textarea);
+
+  // Select the textarea content
+  textarea.select();
+
+  // Copy the selected text to the clipboard
+  document.execCommand('copy');
+
+  // Remove the textarea from the body
+  document.body.removeChild(textarea);
+
+  // Show a success message
+  alert('Code copied to clipboard!');
+});
+</script>
+
+</body>
+</html>
