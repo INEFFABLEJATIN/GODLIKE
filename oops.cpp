@@ -59,7 +59,7 @@ int main (){
     employee2.display();
 
 /* 
-basic method but is long 
+basic method but it is long 
 Employee employee1;
 employee1.Name = "jatin maheshwari";
 employee1.Company = "";
