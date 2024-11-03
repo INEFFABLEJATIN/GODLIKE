@@ -6,8 +6,7 @@ int main(){
 }
 */
 //this is c not cpp 
-// don't get confuse always pasting 
-//cpp code in c and then crying why it is not working
+// don't get confuse always pasting cpp code in c and then crying why it is not working
 
 #include<stdio.h>
 
